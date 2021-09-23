@@ -1,14 +1,17 @@
 import os
-import unittest
+# import unittest
 
 
 from flask_migrate import Migrate
+from app import  blueprint
+from app.main.model import blacklist
 # from flask_script import Manager
 
 from app.main import create_app, db
 from app.main.model.user import User
 
 app = create_app(os.getenv('BOILERPLATE_ENV') or 'dev')
+app.register_blueprint(blueprint)
 
 app.app_context().push()
 
