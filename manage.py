@@ -19,7 +19,7 @@ app.app_context().push()
 
 # manager = Manager(app)
 
-migrate = Migrate(app, db)
+# migrate = Migrate(app, db)
 
 # manager.add_command('db', MigrateCommand)
 

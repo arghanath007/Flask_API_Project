@@ -6,7 +6,7 @@ from urllib.parse import quote_plus
 DB_PASSWORD=quote_plus('arghanath@007')
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-SQL_LITE_URI='sqlite:///' + os.path.join(basedir, 'flask_boilerplate_main.db')
+# SQL_LITE_URI='sqlite:///' + os.path.join(basedir, 'flask_boilerplate_main.db')
 POSTGRES_DB=f'postgresql://postgres:{DB_PASSWORD}@localhost:5432/DatabaseForAPI'
 DB_URI=POSTGRES_DB
 
