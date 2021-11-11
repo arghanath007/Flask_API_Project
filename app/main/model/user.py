@@ -5,7 +5,7 @@ from app.main import db,flask_bcrypt
 from app.main.model.blacklist import BlacklistToken
 from app.main.config import key
 
-class User(db.Model):
+class User(db.Model): #Declaring the User Class as a model for SQLALCHEMY
     # User Model for storing user details.
     __tablename__='user'
 

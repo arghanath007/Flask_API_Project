@@ -1,6 +1,7 @@
 import os
 # import unittest
 
+#Created with the Flask 2.0 version with Flask-restx.
 
 from flask_migrate import Migrate
 from app import  blueprint
@@ -10,7 +11,7 @@ from app.main.model import blacklist
 from app.main import create_app, db
 from app.main.model.user import User
 
-app = create_app(os.getenv('BOILERPLATE_ENV') or 'dev')
+app = create_app(os.getenv('BOILERPLATE_ENV') or 'dev') #Sending the config_name to the create_app function.
 app.register_blueprint(blueprint)
 
 app.app_context().push()
